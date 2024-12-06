@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+int Dlugosc;
+cout << "Podaj dlugosc tablicy: ";
+cin >> Dlugosc;  
+int* tab = new int[Dlugosc];
+for (int i = 0; i < Dlugosc; i++) {
+cout << "Podaj liczbe do dodania: ";
+cin >> tab[i];}
+int nMax = tab[0];
+for (int i = 1; i < Dlugosc; i++) {
+if (tab[i] > nMax) {
+nMax = tab[i]; }  
+}
+cout << endl << "Najwieksza liczba to: " << nMax << endl;
+}
+
